@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel reservation form</title>
+</head>
+<body>
+    <h1>Travel reservation form</h1>
+    <h2>denotes mandotory</h2>
+
+    <form action="#" method="post">
+        <section>
+            <label for="name">Full name:</label>
+            <input type="text" name="name" id="name" placeholder="Firstname Lastname" required>
+        </section>
+        <section>
+        <label for="email">Email address:</label>
+        <input type="email" id="email" placeholder="EMAIL_ADRESS">
+        </section>
+
+        <section>
+            <label for="tour-package">Select Tour Package:</label>
+                    <select name="tour-package" id="tour-package">
+                    <option value="goa">Goa</option>
+                    <option value="option2">option2</option>
+                    <option value="option3">option3</option>
+        </select>
+        </section>
+
+        <section>
+            <label for="arrive">Arrive date:</label>
+            <input type="date" id="arrive" name="arrive-date">
+        </section>
+        <section>
+        <label for="number">Number of person:</label>
+        <input type="number" id="number" name="number-person" required>
+        </section>  
+
+        <span>What would you want to avail?</span>
+        <br>
+        <label for="bording">Bording</label>
+        <input type="checkbox" name="avail" id="bording" value="bording">
+        <label for="fooding">Fooding</label>
+        <input type="checkbox" name="avail" id="fooding" value="fooding">
+        <label for="sight-seeing">Sing seeing</label>
+        <input type="checkbox" name="avail" id="sight-seeing" value="sight-seeing">
+        <section>
+            <label for="discount">Discount Coupon code:</label>
+            <input type="text" id="discount" name="discount">
+        </section>
+        <fieldset>
+            <legend>
+                Terms and condition
+            </legend>
+            <input type="radio" id="agree" name="agreement" value="agree">
+            <label for="agree">I agree</label>
+            <input type="radio" id="not-agree" name="agreement" value="not-agree">
+            <label for="not-agree">I disagree</label>
+        </fieldset>
+
+        <input type="submit" value="Complete reservation">
+    </form>
+</body>
+</html>
